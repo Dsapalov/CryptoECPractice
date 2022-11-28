@@ -13,6 +13,7 @@
 		B643F3DF293438F700686A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B643F3DD293438F700686A1B /* Main.storyboard */; };
 		B643F3E1293438F900686A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B643F3E0293438F900686A1B /* Assets.xcassets */; };
 		B643F3E4293438F900686A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B643F3E2293438F900686A1B /* LaunchScreen.storyboard */; };
+		B6E65AD029343D2900367200 /* SwiftECC in Frameworks */ = {isa = PBXBuildFile; productRef = B6E65ACF29343D2900367200 /* SwiftECC */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E65AD029343D2900367200 /* SwiftECC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = CryptoECPractice;
+			packageProductDependencies = (
+				B6E65ACF29343D2900367200 /* SwiftECC */,
+			);
 			productName = CryptoECPractice;
 			productReference = B643F3D4293438F700686A1B /* CryptoECPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = B643F3CB293438F700686A1B;
+			packageReferences = (
+				B6E65ACE29343D2900367200 /* XCRemoteSwiftPackageReference "SwiftECC" */,
+			);
 			productRefGroup = B643F3D5293438F700686A1B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B6E65ACE29343D2900367200 /* XCRemoteSwiftPackageReference "SwiftECC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/leif-ibsen/SwiftECC";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B6E65ACF29343D2900367200 /* SwiftECC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6E65ACE29343D2900367200 /* XCRemoteSwiftPackageReference "SwiftECC" */;
+			productName = SwiftECC;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B643F3CC293438F700686A1B /* Project object */;
 }
